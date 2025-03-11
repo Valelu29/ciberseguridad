@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Vigenere</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="texto">Texto a cifrar:</label>
+                    <textarea id="texto" class="form-control" rows="4" placeholder="Ingresa el texto aquí"></textarea>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="desplazamiento">Desplazamiento:</label>
+                    <input type="range" min="1" max="25" step="1" value="1" id="desplazamiento" name="desplazamiento" class="form-control">
+                    <span id="valorDesplazamiento">1</span>
+                </div>
+            </div>
+
+    
+            <div class="col-md-12">
+                <button id="cifrar" class="btn btn-primary">Cifrar</button>
+            </div>
+
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="resultado">Texto cifrado:</label>
+                    <div id="resultado" class="form-control" style="height: 150px; overflow-y: auto; border: 1px solid #ccc; padding: 10px;">
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
